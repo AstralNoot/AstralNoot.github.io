@@ -8,26 +8,27 @@
     body {
       background-color: #1f1f1f;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: flex-start;
+      justify-content: flex-end;
       height: 100vh;
       margin: 0;
     }
 
     .glow-text {
       font-size: 3em;
-      color: #00f;
+      color: #fff;
       font-family: 'Arial', sans-serif;
-      text-align: center;
+      text-align: right;
+      margin: 10px;
       animation: glow 1s ease-in-out infinite alternate;
     }
 
     @keyframes glow {
       from {
-        text-shadow: 0 0 10px #00f, 0 0 20px #00f, 0 0 30px #00f;
+        text-shadow: 0 0 25px #fff, 0 0 50px #fff, 0 0 75px #fff;
       }
       to {
-        text-shadow: 0 0 20px #00f, 0 0 30px #00f, 0 0 40px #00f;
+        text-shadow: 0 0 50px #fff, 0 0 75px #fff, 0 0 100px #fff;
       }
     }
   </style>
