@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: 'Arial', sans-serif;
-      background-color: #f4f4f4;
+      background-color: #000;
       margin: 0;
       padding: 0;
       display: flex;
@@ -18,19 +18,28 @@
     }
 
     header {
-      background-color: #333;
+      background-color: #000;
       color: #fff;
-      padding: 10px;
+      padding: 20px;
       text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      font-weight: bold;
+      color: #fff;
+      text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+      margin: 0;
     }
 
     main {
       text-align: center;
       margin-top: 20px;
+      color: #fff;
     }
 
     footer {
-      background-color: #333;
+      background-color: #000;
       color: #fff;
       padding: 10px;
       text-align: center;
@@ -43,7 +52,7 @@
 <body>
 
   <header>
-    <h1>Your GitHub Website</h1>
+    <h1>Your Name</h1>
   </header>
 
   <main>
