@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,16 +20,7 @@
       font-family: 'Arial', sans-serif;
       text-align: right;
       margin: 10px;
-      animation: glow 1s ease-in-out infinite alternate;
-    }
-
-    @keyframes glow {
-      from {
-        text-shadow: 0 0 25px #fff, 0 0 50px #fff, 0 0 75px #fff;
-      }
-      to {
-        text-shadow: 0 0 50px #fff, 0 0 75px #fff, 0 0 100px #fff;
-      }
+      text-shadow: 0 0 25px #fff, 0 0 50px #fff, 0 0 75px #fff;
     }
   </style>
 </head>
