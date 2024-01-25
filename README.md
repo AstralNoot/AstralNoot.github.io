@@ -15,27 +15,24 @@
       align-items: center;
       justify-content: center;
       height: 100vh;
+      color: #fff;
     }
 
     header {
-      background-color: #000;
-      color: #fff;
-      padding: 20px;
       text-align: center;
+      margin-bottom: 20px;
     }
 
     h1 {
-      font-size: 2em;
-      font-weight: bold;
-      color: #fff;
-      text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+      font-size: 3em;
+      text-shadow: 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff;
       margin: 0;
     }
 
-    main {
-      text-align: center;
-      margin-top: 20px;
-      color: #fff;
+    h2 {
+      font-size: 2em;
+      text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+      margin: 0;
     }
 
     footer {
@@ -52,12 +49,9 @@
 <body>
 
   <header>
-    <h1>Your Name</h1>
+    <h1>AstralNoot</h1>
+    <h2>Rise</h2>
   </header>
-
-  <main>
-    <p>Welcome to my GitHub website! Feel free to explore.</p>
-  </main>
 
   <footer>
     &copy; 2024 Your Name
