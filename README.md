@@ -1,31 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Hello with Glow</title>
-    <style>
-        #text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-family: sans-serif;
-            color: #fff;
-            font-size: 5em;
-            animation: glow 1s infinite alternate;
-        }
-
-        @keyframes glow {
-            from {
-                opacity: 0;
-            }
-
-            to {
-                opacity: 1;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glowing Hello</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="text">Hello</div>
+  <div class="glowing-text">Hello</div>
 </body>
 </html>
