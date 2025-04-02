@@ -1,0 +1,38 @@
+/* Reset margins and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  color: white;
+}
+
+.glowing-text {
+  font-size: 4em;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+  text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px rgba(255, 255, 255, 0.7);
+  animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+/* Keyframe for glowing animation */
+@keyframes glow {
+  0% {
+    text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white, 0 0 40px rgba(255, 255, 255, 0.7);
+  }
+  100% {
+    text-shadow: 0 0 20px white, 0 0 30px white, 0 0 40px white, 0 0 50px rgba(255, 255, 255, 0.7);
+  }
+}
