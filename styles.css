@@ -94,7 +94,7 @@ nav.buttons a {
   padding: 4rem 2rem;
   text-align: center;
   backdrop-filter: blur(15px);
-  background: rgba(255, 255, 255, 0.05);
+  background: none;
   box-shadow: 0 0 20px rgba(142, 45, 226, 0.4);
   margin: 0;
 }
