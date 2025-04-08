@@ -19,16 +19,3 @@
         <a href="https://discord.gg/mrJFrxqm" class="btn secondary">Discord</a>
       </nav>
     </header>
-
-    <section class="section">
-      <h2>The most intuitive multitool</h2>
-      <h2> </h2>
-      <h2>Many features</h2>
-      <h2> </h2>
-      <h2>Open source</h2>
-      <h2> </h2>
-      <h2>Free</h2>
-    </section>
-  </div>
-</body>
-</html>
