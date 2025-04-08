@@ -9,7 +9,7 @@
 </head>
 <body>
   <header>
-    <img src="logo-transparent.png" alt="Rise Logo" class="logo">
+    <img src="logo.png" alt="Rise Logo" class="logo">
     <h1 class="title">Rise Client. The best Minecraft cheating solution.</h1>
     <p class="subtitle">Dominate your opponents</p>
     <nav class="buttons">
@@ -21,11 +21,11 @@
   </header>
 
   <div class="icons">
-    <img src="logo-transparent.png" alt="icon1">
-    <img src="logo-transparent.png" alt="icon2">
-    <img src="logo-transparent.png" alt="icon3">
-    <img src="logo-transparent.png" alt="icon4">
-    <img src="logo-transparent.png" alt="icon5">
+    <img src="icon1.png" alt="icon1">
+    <img src="icon2.png" alt="icon2">
+    <img src="icon3.png" alt="icon3">
+    <img src="icon4.png" alt="icon4">
+    <img src="icon5.png" alt="icon5">
   </div>
 
   <section class="section">
