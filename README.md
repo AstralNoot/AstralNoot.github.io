@@ -22,21 +22,14 @@
     </header>
 
     <section class="section">
-      <h2>Dominate your opponents with Rise</h2>
-      <ul>
-        <li>Constant Updates</li>
-        <li>Supports all Minecraft versions</li>
-        <li>State-of-the-art Bypasses</li>
-      </ul>
+      <h2>The most intuitive multitool</h2>
+      <h2> </h2>
+      <h2>Many features</h2>
+      <h2> </h2>
+      <h2>Open source</h2>
+      <h2> </h2>
+      <h2>Free</h2>
     </section>
-
-    <section class="section">
-      <h1>The most premium version of Rise yet.</h1>
-      <p>After working on Rise for 6+ years, we have made many improvements and revamped the whole client with new designs and features.</p>
-    </section>
-    <footer>
-      <p>&copy; 2025 Rise Client. All rights reserved.</p>
-    </footer>
   </div>
 </body>
 </html>
