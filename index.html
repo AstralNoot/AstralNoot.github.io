@@ -20,14 +20,6 @@
     </nav>
   </header>
 
-  <div class="icons">
-    <img src="icon1.png" alt="icon1">
-    <img src="icon2.png" alt="icon2">
-    <img src="icon3.png" alt="icon3">
-    <img src="icon4.png" alt="icon4">
-    <img src="icon5.png" alt="icon5">
-  </div>
-
   <section class="section">
     <h2>Dominate your opponents with Rise</h2>
     <ul>
@@ -44,14 +36,14 @@
 
   <section class="section features">
     <h2>Feature Filled</h2>
-    <div class="cloud">
+    <div class="glass-circle">
       <p>ClickGui, Speed, Scaffold, Fly, Reach, ESP, Tracers...</p>
     </div>
   </section>
 
   <section class="section customizable">
     <h2>Customizable</h2>
-    <div class="color-circle">
+    <div class="glass-circle">
       <p>Color wheel preview</p>
     </div>
   </section>
