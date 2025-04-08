@@ -4,45 +4,51 @@
   box-sizing: border-box;
 }
 
-body, html {
+html, body {
   height: 100%;
   font-family: 'Inter', sans-serif;
   background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
-  background-attachment: fixed;
   background-size: cover;
-  color: white;
+  background-attachment: fixed;
   overflow-x: hidden;
+  color: white;
+}
+
+.background-overlay {
+  min-height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(4px);
 }
 
 header {
   text-align: center;
-  padding: 4rem 2rem;
+  padding: 5rem 2rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at center, rgba(142, 45, 226, 0.3), transparent);
+  background: radial-gradient(circle at center, rgba(142, 45, 226, 0.2), transparent);
 }
 
 .logo {
   width: 60px;
   height: 60px;
   margin-bottom: 1.5rem;
+  filter: drop-shadow(0 0 10px #8e2de2);
 }
 
 .title {
-  font-size: 2.5rem;
+  font-size: 2.7rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
+  text-shadow: 0 0 15px #fff, 0 0 30px #8e2de2;
 }
 
 .subtitle {
-  font-size: 1.4rem;
-  color: #ccc;
+  font-size: 1.5rem;
   margin-bottom: 2rem;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  text-shadow: 0 0 10px #fff, 0 0 20px #8e2de2;
 }
 
 nav.buttons {
@@ -60,21 +66,21 @@ nav.buttons a {
   color: white;
   font-weight: 600;
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
   display: inline-block;
-  box-shadow: 0 0 10px #8e2de2;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px #8e2de2;
+  text-shadow: 0 0 8px #fff;
 }
 
 .btn:hover {
   background: #a244ec;
   transform: translateY(-3px);
-  box-shadow: 0 0 20px #a244ec;
+  box-shadow: 0 0 25px #a244ec;
 }
 
 .btn.secondary {
   background: transparent;
   border: 2px solid #8e2de2;
-  box-shadow: 0 0 10px #8e2de2;
 }
 
 .section {
@@ -88,15 +94,8 @@ nav.buttons a {
   box-shadow: 0 0 20px rgba(142, 45, 226, 0.4);
 }
 
-.section h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
-}
-
-.section p, .section ul li {
-  color: #ddd;
-  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
+.section h2, .section p, .section li {
+  text-shadow: 0 0 10px #fff, 0 0 15px #8e2de2;
 }
 
 .section ul {
@@ -109,7 +108,7 @@ nav.buttons a {
 }
 
 .glass-circle {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.07);
   padding: 2rem;
   border-radius: 50%;
   margin-top: 1.5rem;
@@ -120,7 +119,9 @@ nav.buttons a {
   justify-content: center;
   text-align: center;
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 25px rgba(142, 45, 226, 0.5);
+  box-shadow: 0 0 30px rgba(142, 45, 226, 0.5);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
@@ -128,6 +129,7 @@ footer {
   padding: 3rem 1rem;
   color: #aaa;
   font-size: 0.9rem;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.3);
   border-top: 1px solid rgba(255, 255, 255, 0.1);
+  text-shadow: 0 0 8px #fff;
 }
