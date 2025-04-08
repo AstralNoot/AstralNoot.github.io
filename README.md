@@ -31,7 +31,7 @@
     </section>
 
     <section class="section">
-      <h2>The most premium version of Rise yet.</h2>
+      <h1>The most premium version of Rise yet.</h1>
       <p>After working on Rise for 6+ years, we have made many improvements and revamped the whole client with new designs and features.</p>
     </section>
     <footer>
