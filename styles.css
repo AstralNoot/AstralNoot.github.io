@@ -22,12 +22,12 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at center, rgba(142, 45, 226, 0.5), transparent);
+  background: radial-gradient(circle at center, rgba(142, 45, 226, 0.3), transparent);
 }
 
 .logo {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   margin-bottom: 1.5rem;
 }
 
@@ -35,13 +35,14 @@ header {
   font-size: 2.5rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  text-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
 }
 
 .subtitle {
   font-size: 1.4rem;
   color: #ccc;
   margin-bottom: 2rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
 }
 
 nav.buttons {
@@ -59,44 +60,43 @@ nav.buttons a {
   color: white;
   font-weight: 600;
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
   display: inline-block;
+  box-shadow: 0 0 10px #8e2de2;
 }
 
 .btn:hover {
   background: #a244ec;
   transform: translateY(-3px);
+  box-shadow: 0 0 20px #a244ec;
 }
 
 .btn.secondary {
   background: transparent;
   border: 2px solid #8e2de2;
-}
-
-.icons {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  margin: 2rem 0;
-  flex-wrap: wrap;
-}
-
-.icons img {
-  width: 50px;
+  box-shadow: 0 0 10px #8e2de2;
 }
 
 .section {
   padding: 4rem 2rem;
   text-align: center;
-  background: rgba(255, 255, 255, 0.05);
-  margin: 2rem 1rem;
+  margin: 2rem auto;
   border-radius: 20px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.05);
+  max-width: 800px;
+  box-shadow: 0 0 20px rgba(142, 45, 226, 0.4);
 }
 
 .section h2 {
   font-size: 2rem;
   margin-bottom: 1rem;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.section p, .section ul li {
+  color: #ddd;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
 }
 
 .section ul {
@@ -108,9 +108,8 @@ nav.buttons a {
   padding: 0.5rem 0;
 }
 
-.features .cloud,
-.customizable .color-circle {
-  background: #1a1a2e;
+.glass-circle {
+  background: rgba(255, 255, 255, 0.05);
   padding: 2rem;
   border-radius: 50%;
   margin-top: 1.5rem;
@@ -120,6 +119,8 @@ nav.buttons a {
   align-items: center;
   justify-content: center;
   text-align: center;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 0 25px rgba(142, 45, 226, 0.5);
 }
 
 footer {
