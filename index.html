@@ -15,7 +15,7 @@
       <p class="subtitle">Get ahead with this free open source tool</p>
       <nav class="buttons">
         <a href="#" class="btn secondary">Settings docs</a>
-        <a href="#" class="btn">Try free demo</a>
+        <a href="https://github.com/AstralNoot/AstralNoot.github.io" class="btn">Download</a>
         <a href="#" class="btn secondary">Join Discord</a>
       </nav>
     </header>
