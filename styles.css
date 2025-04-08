@@ -84,15 +84,25 @@ nav.buttons a {
 }
 
 .section {
+  min-height: 100vh; /* Fullscreen height */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
   padding: 4rem 2rem;
   text-align: center;
-  margin: 2rem auto;
-  border-radius: 20px;
   backdrop-filter: blur(15px);
   background: rgba(255, 255, 255, 0.05);
-  max-width: 800px;
   box-shadow: 0 0 20px rgba(142, 45, 226, 0.4);
+  margin: 0;
 }
+
+.section h2, .section p, .section li {
+  text-shadow: 0 0 10px #fff, 0 0 15px #8e2de2;
+}
+
 
 .section h2, .section p, .section li {
   text-shadow: 0 0 10px #fff, 0 0 15px #8e2de2;
