@@ -34,21 +34,6 @@
       <h2>The most premium version of Rise yet.</h2>
       <p>After working on Rise for 6+ years, we have made many improvements and revamped the whole client with new designs and features.</p>
     </section>
-
-    <section class="section features">
-      <h2>Feature Filled</h2>
-      <div class="glass-circle">
-        <p>ClickGui, Speed, Scaffold, Fly, Reach, ESP, Tracers...</p>
-      </div>
-    </section>
-
-    <section class="section customizable">
-      <h2>Customizable</h2>
-      <div class="glass-circle">
-        <p>Color wheel preview</p>
-      </div>
-    </section>
-
     <footer>
       <p>&copy; 2025 Rise Client. All rights reserved.</p>
     </footer>
