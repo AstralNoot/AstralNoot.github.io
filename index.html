@@ -16,7 +16,7 @@
       <nav class="buttons">
         <a href="#" class="btn secondary">Settings docs</a>
         <a href="https://github.com/AstralNoot/AstralNoot.github.io" class="btn">Download</a>
-        <a href="#" class="btn secondary">Join Discord</a>
+        <a href="discord.com" class="btn secondary">Discord</a>
       </nav>
     </header>
 
