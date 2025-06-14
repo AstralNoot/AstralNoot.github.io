@@ -38,7 +38,7 @@
     window.addEventListener('resize', resizeCanvas);
     resizeCanvas();
 
-    const numDrops = 300;
+    const numDrops = 600;
 
     for (let i = 0; i < numDrops; i++) {
       drops.push({
