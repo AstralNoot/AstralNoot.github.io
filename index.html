@@ -9,6 +9,8 @@
 </head>
 <body>
   <div class="background-overlay">
+    <canvas id="rain-canvas"></canvas>
+
     <header>
       <img src="logo-transparent.png" alt="Rise Logo" class="logo">
       <h1 class="title">Multi. The most simple multitool.</h1>
@@ -19,3 +21,58 @@
         <a href="https://discord.gg/mrJFrxqm" class="btn secondary">Discord</a>
       </nav>
     </header>
+  </div>
+
+  <script>
+    const canvas = document.getElementById('rain-canvas');
+    const ctx = canvas.getContext('2d');
+
+    let width, height;
+    let drops = [];
+
+    function resizeCanvas() {
+      width = canvas.width = window.innerWidth;
+      height = canvas.height = window.innerHeight;
+    }
+
+    window.addEventListener('resize', resizeCanvas);
+    resizeCanvas();
+
+    const numDrops = 300;
+
+    for (let i = 0; i < numDrops; i++) {
+      drops.push({
+        x: Math.random() * width,
+        y: Math.random() * height,
+        length: Math.random() * 20 + 10,
+        velocity: Math.random() * 4 + 4,
+        opacity: Math.random() * 0.5 + 0.2
+      });
+    }
+
+    function drawRain() {
+      ctx.clearRect(0, 0, width, height);
+      ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
+      ctx.lineWidth = 1.2;
+
+      for (let i = 0; i < drops.length; i++) {
+        const drop = drops[i];
+        ctx.beginPath();
+        ctx.moveTo(drop.x, drop.y);
+        ctx.lineTo(drop.x, drop.y + drop.length);
+        ctx.stroke();
+
+        drop.y += drop.velocity;
+        if (drop.y > height) {
+          drop.y = -drop.length;
+          drop.x = Math.random() * width;
+        }
+      }
+
+      requestAnimationFrame(drawRain);
+    }
+
+    drawRain();
+  </script>
+</body>
+</html>
