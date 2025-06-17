@@ -9,9 +9,11 @@
 </head>
 <body id="top">
   <!-- Hero Section -->
+  <head>
     <h1>Phase Client</h1>
     <p>Next-gen Minecraft experience with powerful performance and visuals.</p>
     <a href="#download" class="download-btn">Download Now</a>
+  </head>
 
   <!-- Features Section -->
   <section class="features-section">
