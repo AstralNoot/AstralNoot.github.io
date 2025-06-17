@@ -3,11 +3,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Why Choose Phase Client?</title>
+  <title>Phase Client</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+
+  <!-- Hero Section -->
+  <header class="hero" id="top">
+    <h1>Phase Client</h1>
+    <p>Next-gen Minecraft experience with powerful performance and visuals.</p>
+    <a href="#download" class="download-btn">Download Now</a>
+  </header>
+
+  <!-- Features Section -->
   <section class="features-section">
     <h2>Why Choose Phase Client?</h2>
     <p class="subtitle">A powerful, modern Minecraft client designed to enhance your game like never before.</p>
@@ -44,5 +53,19 @@
       </div>
     </div>
   </section>
+
+  <!-- Download Section -->
+  <section id="download" class="download-section">
+    <h2>Download Phase Client</h2>
+    <p>Ready to elevate your Minecraft experience?</p>
+    <a href="https://example.com/download" class="download-btn glow">Download for Windows</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Phase Client. Licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
+    <a href="#top" class="back-to-top">↑ Back to Top</a>
+  </footer>
+
 </body>
 </html>
