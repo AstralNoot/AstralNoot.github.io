@@ -5,13 +5,28 @@
   box-sizing: border-box;
 }
 
-/* Fix the background bleeding issue and lighten shader */
-html, body {
+html {
   height: 100%;
-  width: 100%;
+}
+
+/* Body and shader fix */
+body {
+  min-height: 100vh;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   color: #fff;
+  position: relative;
+}
+
+/* Seamless animated background using pseudo-element */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
   background: radial-gradient(circle at center, #444 0%, #111 100%);
   background-size: 400% 400%;
   animation: pulseShader 10s ease-in-out infinite;
@@ -27,7 +42,7 @@ html, body {
   }
 }
 
-/* Hero */
+/* Hero Section */
 .hero {
   text-align: center;
   padding: 100px 20px;
@@ -59,7 +74,7 @@ html, body {
   box-shadow: 0 0 12px #00f0ff88;
   transition: 0.3s ease;
   display: inline-block;
-  margin-top: 20px; /* added to separate from footer */
+  margin-top: 20px;
   z-index: 10;
   position: relative;
 }
@@ -141,14 +156,14 @@ html, body {
 /* Download Section */
 .download-section {
   text-align: center;
-  padding: 80px 20px 100px; /* added bottom padding so button doesn’t overlap footer */
+  padding: 80px 20px 100px;
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
 }
 
 /* Footer */
 footer {
-  background: transparent; /* Make footer background transparent */
+  background: transparent;
   backdrop-filter: blur(15px);
   padding: 40px 20px;
   text-align: center;
