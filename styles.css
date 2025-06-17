@@ -46,7 +46,6 @@ body::before {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: linear-gradient(to right, #00f0ff, #ff00c8);
 }
 
 .hero h1 {
