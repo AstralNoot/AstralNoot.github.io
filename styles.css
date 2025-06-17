@@ -5,14 +5,14 @@
   box-sizing: border-box;
 }
 
-/* Fix the background bleeding issue */
+/* Fix the background bleeding issue and lighten shader */
 html, body {
   height: 100%;
   width: 100%;
   font-family: 'Inter', sans-serif;
   overflow-x: hidden;
   color: #fff;
-  background: radial-gradient(circle at center, #111 0%, #000 100%);
+  background: radial-gradient(circle at center, #444 0%, #111 100%);
   background-size: 400% 400%;
   animation: pulseShader 10s ease-in-out infinite;
 }
@@ -31,7 +31,7 @@ html, body {
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(25px);
 }
 
@@ -58,6 +58,10 @@ html, body {
   text-decoration: none;
   box-shadow: 0 0 12px #00f0ff88;
   transition: 0.3s ease;
+  display: inline-block;
+  margin-top: 20px; /* added to separate from footer */
+  z-index: 10;
+  position: relative;
 }
 
 .download-btn:hover {
@@ -137,29 +141,44 @@ html, body {
 /* Download Section */
 .download-section {
   text-align: center;
-  padding: 80px 20px;
+  padding: 80px 20px 100px; /* added bottom padding so button doesn’t overlap footer */
   background: rgba(255, 255, 255, 0.03);
   backdrop-filter: blur(10px);
 }
 
 /* Footer */
 footer {
-  background: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(8px);
+  background: transparent; /* Make footer background transparent */
+  backdrop-filter: blur(15px);
   padding: 40px 20px;
   text-align: center;
   font-size: 0.9rem;
   color: #aaa;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  z-index: 5;
 }
 
 footer a {
   color: #00f0ff;
   text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ff00c8;
 }
 
 .back-to-top {
-  display: block;
+  display: inline-block;
   margin-top: 12px;
   font-weight: bold;
   color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.back-to-top:hover {
+  color: #00f0ff;
 }
