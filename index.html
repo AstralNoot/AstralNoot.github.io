@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Multi</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Phase Client</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -20,7 +20,41 @@
         <a href="https://discord.gg/2Nb6sygmSm" class="btn secondary">Discord</a>
         <a href="#" class="btn secondary">Github</a>
       </nav>
+
+      <!-- Optional: UI Menu Image -->
+      <img src="29253dcd-d7e9-4a10-91ac-86b7588d48a0.png" alt="UI Preview" class="floating-ui">
     </header>
+
+    <section class="features">
+      <h2 class="section-title">Why choose Phase?</h2>
+      <p class="section-subtitle">With our abundant set of features, you'll never want to go back to another client.</p>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <h3>Feature-abundant</h3>
+          <p>Loads of modules and options for full control.</p>
+        </div>
+        <div class="feature-card">
+          <h3>User-friendly</h3>
+          <p>Just install and you’re good to go.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Consistent updates</h3>
+          <p>We deliver frequent improvements and features.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Universal compatibility</h3>
+          <p>Runs on Windows, macOS, and Linux.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Trusted by thousands</h3>
+          <p>Built by experienced developers.</p>
+        </div>
+        <div class="feature-card">
+          <h3>Premium quality</h3>
+          <p>High standards and polish guaranteed.</p>
+        </div>
+      </div>
+    </section>
   </div>
 
   <script>
@@ -39,7 +73,6 @@
     resizeCanvas();
 
     const numDrops = 600;
-
     for (let i = 0; i < numDrops; i++) {
       drops.push({
         x: Math.random() * width,
