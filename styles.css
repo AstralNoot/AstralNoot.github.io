@@ -10,15 +10,13 @@ html, body {
   background: #000;
   overflow-x: hidden;
   color: white;
-  position: relative;
 }
 
 .background-overlay {
-  min-height: 100vh;
-  width: 100%;
   position: relative;
-  backdrop-filter: blur(4px);
   z-index: 1;
+  width: 100%;
+  min-height: 100vh;
 }
 
 #rain-canvas {
@@ -34,12 +32,10 @@ html, body {
 header {
   text-align: center;
   padding: 5rem 2rem;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: radial-gradient(circle at center, rgba(142, 45, 226, 0.2), transparent);
 }
 
 .logo {
@@ -52,14 +48,19 @@ header {
 .title {
   font-size: 2.7rem;
   font-weight: 700;
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
   text-shadow: 0 0 15px #fff, 0 0 30px #8e2de2;
 }
 
 .subtitle {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-bottom: 2rem;
   text-shadow: 0 0 10px #fff, 0 0 20px #8e2de2;
+}
+
+.highlight {
+  color: #3ea6ff;
+  font-weight: 600;
 }
 
 nav.buttons {
@@ -71,7 +72,7 @@ nav.buttons a {
 }
 
 .btn {
-  background: #8e2de2;
+  background: #3ea6ff;
   padding: 0.75rem 1.5rem;
   border-radius: 999px;
   color: white;
@@ -79,70 +80,64 @@ nav.buttons a {
   text-decoration: none;
   display: inline-block;
   transition: all 0.3s ease;
-  box-shadow: 0 0 15px #8e2de2;
+  box-shadow: 0 0 15px #3ea6ff;
   text-shadow: 0 0 8px #fff;
 }
 
 .btn:hover {
-  background: #a244ec;
+  background: #60bfff;
   transform: translateY(-3px);
-  box-shadow: 0 0 25px #a244ec;
+  box-shadow: 0 0 25px #60bfff;
 }
 
-.btn.secondary {
-  background: transparent;
-  border: 2px solid #8e2de2;
-}
-
-/* UI image */
-.floating-ui {
-  margin-top: 3rem;
-  max-width: 90%;
-  width: 600px;
-  border-radius: 1rem;
-  box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
-}
-
-/* Features section */
-.features {
-  padding: 6rem 2rem;
-  background: radial-gradient(circle at top, rgba(0, 0, 0, 0.6), #000);
+/* Features Section */
+.features-section {
+  padding: 4rem 2rem;
   text-align: center;
+  background: rgba(255, 255, 255, 0.02);
+  backdrop-filter: blur(8px);
 }
 
-.section-title {
-  font-size: 2.5rem;
-  font-weight: 700;
+.features-section h2 {
+  font-size: 2.2rem;
   margin-bottom: 1rem;
-  text-shadow: 0 0 15px #fff, 0 0 25px #0ff;
+  text-shadow: 0 0 10px #fff;
 }
 
-.section-subtitle {
-  font-size: 1.2rem;
+.features-section p {
+  font-size: 1.1rem;
   margin-bottom: 3rem;
   color: #ccc;
-  text-shadow: 0 0 10px #8e2de2;
 }
 
-.feature-grid {
+.features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 .feature-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 20px;
   padding: 2rem;
   backdrop-filter: blur(10px);
-  box-shadow: 0 0 20px rgba(142, 45, 226, 0.2);
-  transition: all 0.3s ease;
-  text-shadow: 0 0 10px #fff, 0 0 15px #8e2de2;
+  box-shadow: 0 0 25px rgba(62, 166, 255, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 30px rgba(142, 45, 226, 0.4);
+  transform: translateY(-8px);
+  box-shadow: 0 0 30px rgba(62, 166, 255, 0.3);
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #3ea6ff;
+}
+
+.feature-card p {
+  color: #e0e0e0;
+  font-size: 0.95rem;
+  line-height: 1.4;
 }
