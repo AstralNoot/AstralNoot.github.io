@@ -3,106 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Phase Client</title>
+  <title>Why choose Phase?</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="background-overlay">
-    <canvas id="rain-canvas"></canvas>
-
-    <header>
-      <img src="logo-transparent.png" alt="icon" class="logo">
-      <h1 class="title">Phase</h1>
-      <p class="subtitle">Dominate the game with <span class="highlight">Phase Client</span></p>
-      <nav class="buttons">
-        <a href="https://www.youtube.com/@FaunaClient-f1z" class="btn">YouTube</a>
-        <a href="https://discord.gg/2Nb6sygmSm" class="btn">Discord</a>
-        <a href="#" class="btn">Github</a>
-      </nav>
-    </header>
-
-    <section class="features-section">
-      <h2>Why choose Phase?</h2>
-      <p>With our abundant set of features, you'll never want to go back to another client.</p>
-      <div class="features-grid">
-        <div class="feature-card">
-          <h3>Feature-abundant</h3>
-          <p>A vast number of modules with a variety of customization options.</p>
-        </div>
-        <div class="feature-card">
-          <h3>User-friendly</h3>
-          <p>Simple and easy to use. Just install and you're ready to go.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Consistent updates</h3>
-          <p>Frequent updates help you stay on top of new features.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Universal compatibility</h3>
-          <p>Tested on Windows, macOS, and Linux.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Trusted by thousands</h3>
-          <p>Developed by experienced developers with years of expertise.</p>
-        </div>
-        <div class="feature-card">
-          <h3>Premium quality</h3>
-          <p>We strive to make our client as polished as possible.</p>
-        </div>
+  <section class="features-section">
+    <h2>Why choose Phase?</h2>
+    <p class="subtitle">With our abundant set of features, you'll never want to go back to another client.</p>
+    <div class="features-grid">
+      <div class="feature-card">
+        <div class="icon-circle">💡</div>
+        <h3>Feature-abundant</h3>
+        <p>Phase has a vast number of modules with a variety of customization options.</p>
       </div>
-    </section>
-  </div>
-
-  <script>
-    const canvas = document.getElementById('rain-canvas');
-    const ctx = canvas.getContext('2d');
-
-    let width, height;
-    let drops = [];
-
-    function resizeCanvas() {
-      width = canvas.width = window.innerWidth;
-      height = canvas.height = window.innerHeight;
-    }
-
-    window.addEventListener('resize', resizeCanvas);
-    resizeCanvas();
-
-    const numDrops = 600;
-    for (let i = 0; i < numDrops; i++) {
-      drops.push({
-        x: Math.random() * width,
-        y: Math.random() * height,
-        length: Math.random() * 20 + 10,
-        velocity: Math.random() * 4 + 4,
-        opacity: Math.random() * 0.5 + 0.2
-      });
-    }
-
-    function drawRain() {
-      ctx.clearRect(0, 0, width, height);
-      ctx.strokeStyle = 'rgba(255, 255, 255, 0.1)';
-      ctx.lineWidth = 1.2;
-
-      for (let i = 0; i < drops.length; i++) {
-        const drop = drops[i];
-        ctx.beginPath();
-        ctx.moveTo(drop.x, drop.y);
-        ctx.lineTo(drop.x, drop.y + drop.length);
-        ctx.stroke();
-
-        drop.y += drop.velocity;
-        if (drop.y > height) {
-          drop.y = -drop.length;
-          drop.x = Math.random() * width;
-        }
-      }
-
-      requestAnimationFrame(drawRain);
-    }
-
-    drawRain();
-  </script>
+      <div class="feature-card">
+        <div class="icon-circle">🤝</div>
+        <h3>User-friendly</h3>
+        <p>Phase is designed to be simple and easy to use. Just install and you're good to go!</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle">🗓️</div>
+        <h3>Consistent updates</h3>
+        <p>We deliver frequent updates to help you stay on top with new features.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle">🖥️</div>
+        <h3>Universal compatibility</h3>
+        <p>Phase has been tested for compatibility on Windows, macOS, and Linux.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle">👥</div>
+        <h3>Trusted by thousands</h3>
+        <p>Phase is developed by leading developers who have worked on clients for years.</p>
+      </div>
+      <div class="feature-card">
+        <div class="icon-circle">✨</div>
+        <h3>Premium quality</h3>
+        <p>We care about our users and strive to make our client as good as possible.</p>
+      </div>
+    </div>
+  </section>
 </body>
 </html>
