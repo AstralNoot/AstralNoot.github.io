@@ -63,7 +63,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Phase Client. Licensed under <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a>.</p>
+    <p>&copy; 2025 Phase Client — <a href="https://opensource.org/licenses/MIT" target="_blank">MIT License</a></p>
     <a href="#top" class="back-to-top">↑ Back to Top</a>
   </footer>
 
