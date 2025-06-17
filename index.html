@@ -27,10 +27,6 @@
       <div class="feature-card"><div class="icon-circle">🎮</div><h3>Mod Support</h3><p>Phase is compatible with major mod loaders like Fabric and Forge.</p></div>
       <div class="feature-card"><div class="icon-circle">🌈</div><h3>Visual Effects</h3><p>Shaders, particles, and motion blur all integrated into the experience.</p></div>
     </div>
-  </section>
-
-  <!-- Download Section -->
-  <section id="download" class="download-section">
     <h2>Download Phase Client</h2>
     <p>Ready to elevate your Minecraft experience?</p>
     <a href="#" class="download-btn glow">Download for Windows</a>
