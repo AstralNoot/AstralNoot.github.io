@@ -1,3 +1,4 @@
+/* Base */
 * {
   margin: 0;
   padding: 0;
@@ -10,10 +11,30 @@ html {
 
 body {
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to bottom, #2c2c2c, #000000);
+  background: linear-gradient(135deg, #1a1a1a, #0d0d0d, #1a1a1a);
+  background-size: 400% 400%;
+  animation: pulseBG 12s ease infinite;
   color: #ffffff;
   overflow-x: hidden;
   line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Optional Glow Overlay */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle, #ffffff08 0%, transparent 70%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Pulse Animation */
+@keyframes pulseBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 /* Hero */
