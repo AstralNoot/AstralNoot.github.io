@@ -1,18 +1,24 @@
-/* Shader-Like Background */
-.shader-bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: repeating-radial-gradient(circle at center, #111111 0%, #1e1e1e 25%, #000000 50%);
-  background-size: 200% 200%;
-  animation: shaderPulse 12s ease-in-out infinite;
-  z-index: -2;
+/* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/* Animation for Shader BG */
-@keyframes shaderPulse {
+/* Fix the background bleeding issue */
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Inter', sans-serif;
+  overflow-x: hidden;
+  color: #fff;
+  background: radial-gradient(circle at center, #111 0%, #000 100%);
+  background-size: 400% 400%;
+  animation: pulseShader 10s ease-in-out infinite;
+}
+
+/* Shader-style animation */
+@keyframes pulseShader {
   0%, 100% {
     background-position: 0% 50%;
   }
@@ -21,32 +27,12 @@
   }
 }
 
-/* Layout reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  color: #ffffff;
-  overflow-x: hidden;
-  min-height: 100vh;
-  position: relative;
-  z-index: 0;
-}
-
 /* Hero */
 .hero {
   text-align: center;
-  padding: 100px 20px 80px;
-  backdrop-filter: blur(30px);
+  padding: 100px 20px;
   background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(25px);
 }
 
 .hero h1 {
@@ -59,7 +45,7 @@ body {
 
 .hero p {
   font-size: 1.2rem;
-  color: #cccccc;
+  color: #ccc;
   margin-bottom: 30px;
 }
 
@@ -71,7 +57,7 @@ body {
   font-weight: bold;
   text-decoration: none;
   box-shadow: 0 0 12px #00f0ff88;
-  transition: transform 0.3s ease, box-shadow 0.3s;
+  transition: 0.3s ease;
 }
 
 .download-btn:hover {
@@ -83,21 +69,20 @@ body {
 .features-section {
   text-align: center;
   padding: 100px 20px;
-  max-width: 1300px;
-  margin: auto;
+  backdrop-filter: blur(20px);
 }
 
 .features-section h2 {
   font-size: 3rem;
-  margin-bottom: 12px;
   background: linear-gradient(to right, #00f0ff, #ff00c8);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  margin-bottom: 12px;
 }
 
 .subtitle {
   font-size: 1.2rem;
-  color: #ccc;
+  color: #bbb;
   margin-bottom: 60px;
 }
 
@@ -106,25 +91,27 @@ body {
   grid-template-columns: repeat(3, 1fr);
   gap: 40px;
   padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .feature-card {
-  background: rgba(255, 255, 255, 0.06);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   padding: 35px 25px;
   backdrop-filter: blur(20px);
-  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
-  transition: 0.3s ease all;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+  transition: 0.3s ease;
 }
 
 .feature-card:hover {
-  transform: translateY(-6px);
+  transform: translateY(-5px);
   box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
 }
 
 .icon-circle {
-  background: rgba(255, 255, 255, 0.08);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   width: 52px;
   height: 52px;
@@ -133,47 +120,36 @@ body {
   align-items: center;
   justify-content: center;
   font-size: 24px;
-  box-shadow: 0 0 12px rgba(0, 255, 255, 0.4);
+  box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
 }
 
 .feature-card h3 {
   font-size: 1.2rem;
-  margin-bottom: 10px;
   font-weight: 600;
-  color: #ffffff;
+  margin-bottom: 10px;
 }
 
 .feature-card p {
   font-size: 0.95rem;
-  color: #bbbbbb;
-  line-height: 1.6;
+  color: #bbb;
 }
 
 /* Download Section */
 .download-section {
-  padding: 100px 20px;
   text-align: center;
+  padding: 80px 20px;
   background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(20px);
-}
-
-.download-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 12px;
-}
-
-.download-section p {
-  color: #ccc;
-  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
 }
 
 /* Footer */
 footer {
-  background: #111;
-  color: #888;
-  text-align: center;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
   padding: 40px 20px;
+  text-align: center;
   font-size: 0.9rem;
+  color: #aaa;
 }
 
 footer a {
@@ -181,9 +157,9 @@ footer a {
   text-decoration: none;
 }
 
-footer .back-to-top {
+.back-to-top {
   display: block;
-  margin-top: 15px;
+  margin-top: 12px;
   font-weight: bold;
   color: #fff;
 }
