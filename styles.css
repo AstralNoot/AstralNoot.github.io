@@ -47,7 +47,7 @@ body::before {
   text-align: center;
   padding: 100px 20px;
   font-size: 1rem;
-  margin-bottom: 10px;
+  margin-bottom: 1px;
 }
 
 .hero h1 {
