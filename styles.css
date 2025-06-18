@@ -52,6 +52,20 @@ body::before {
   }
 }
 
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 12px #6e00ff66;
+  }
+  50% {
+    box-shadow: 0 0 20px #6e00ffaa;
+  }
+}
+
+.download-btn {
+  animation: glowPulse 3s ease-in-out infinite;
+}
+
+
 /* Hero Section */
 .hero {
   text-align: center;
