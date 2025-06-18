@@ -26,21 +26,21 @@ body::before {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background: radial-gradient(circle at center, #6a00ff 0%, #0000ff 100%);
+  background: radial-gradient(circle at center, #0d001a 0%, #000010 100%);
   background-size: 400% 400%;
   animation: pulseShader 12s ease-in-out infinite;
-  transition: background 1s ease;
 }
 
-/* Animate the background gradient to pulsate */
+/* Dark pulsing animation */
 @keyframes pulseShader {
   0%, 100% {
-    background: radial-gradient(circle at center, #6a00ff 0%, #0000ff 100%);
+    background: radial-gradient(circle at center, #0d001a 0%, #000010 100%);
   }
   50% {
-    background: radial-gradient(circle at center, #b400ff 0%, #00b3ff 100%);
+    background: radial-gradient(circle at center, #1a0033 0%, #000022 100%);
   }
 }
+
 
 /* Shader-style animation */
 @keyframes pulseShader {
