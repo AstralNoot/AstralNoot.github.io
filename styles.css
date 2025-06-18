@@ -18,7 +18,6 @@ body {
   position: relative;
 }
 
-/* Seamless animated background using pseudo-element */
 body::before {
   content: "";
   position: fixed;
@@ -29,9 +28,19 @@ body::before {
   z-index: -1;
   background: radial-gradient(circle at center, #6a00ff 0%, #0000ff 100%);
   background-size: 400% 400%;
-  animation: pulseShader 10s ease-in-out infinite;
+  animation: pulseShader 12s ease-in-out infinite;
+  transition: background 1s ease;
 }
 
+/* Animate the background gradient to pulsate */
+@keyframes pulseShader {
+  0%, 100% {
+    background: radial-gradient(circle at center, #6a00ff 0%, #0000ff 100%);
+  }
+  50% {
+    background: radial-gradient(circle at center, #b400ff 0%, #00b3ff 100%);
+  }
+}
 
 /* Shader-style animation */
 @keyframes pulseShader {
