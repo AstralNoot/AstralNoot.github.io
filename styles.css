@@ -27,10 +27,11 @@ body::before {
   right: 0;
   bottom: 0;
   z-index: -1;
-  background: radial-gradient(circle at center, #444 0%, #111 100%);
+  background: radial-gradient(circle at center, #6a00ff 0%, #0000ff 100%);
   background-size: 400% 400%;
   animation: pulseShader 10s ease-in-out infinite;
 }
+
 
 /* Shader-style animation */
 @keyframes pulseShader {
